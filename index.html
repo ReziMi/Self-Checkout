@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Inputs for three items -->
+    <div class="input-group">
+        <label for="price1">Price for item 1:</label>
+        <input type="number" id="price1" placeholder="Enter price">
+        
+        <label for="quantity1">Quantity for item 1:</label>
+        <input type="number" id="quantity1" placeholder="Enter quantity">
+    </div>
+    
+    <div class="input-group">
+        <label for="price2">Price for item 2:</label>
+        <input type="number" id="price2" placeholder="Enter price">
+        
+        <label for="quantity2">Quantity for item 2:</label>
+        <input type="number" id="quantity2" placeholder="Enter quantity">
+    </div>
+    
+    <div class="input-group">
+        <label for="price3">Price for item 3:</label>
+        <input type="number" id="price3" placeholder="Enter price">
+        
+        <label for="quantity3">Quantity for item 3:</label>
+        <input type="number" id="quantity3" placeholder="Enter quantity">
+    </div>
+    
+    <!-- Button to calculate subtotal-->
+    <button onclick="calculate()">Calculate</button>
+    
+    <!-- Display results -->
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
